@@ -1,0 +1,197 @@
+{
+	"_version": "1.7.0",
+	"sap.app": {
+		"id": "SHOP_FLOOR_PORTAL_OF_MAHESHSHOP_FLOOR_PORTAL_OF_MAHESH",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "servicecatalog.connectivityComponent",
+			"version": "0.0.0"
+		},
+		"dataSources": {
+			"ZODATA_SFP_MAHESH_SRV": {
+				"uri": "/sap/opu/odata/sap/ZODATA_SFP_MAHESH_SRV/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "localService/metadata.xml"
+				}
+			}
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": ["sap_hcb", "sap_belize"]
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "SHOP_FLOOR_PORTAL_OF_MAHESHSHOP_FLOOR_PORTAL_OF_MAHESH.view.View1",
+			"type": "XML"
+		},
+		"dependencies": {
+			"minUI5Version": "1.30.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.ui.layout": {},
+				"sap.ushell": {},
+				"sap.collaboration": {},
+				"sap.ui.comp": {},
+				"sap.uxap": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "SHOP_FLOOR_PORTAL_OF_MAHESHSHOP_FLOOR_PORTAL_OF_MAHESH.i18n.i18n"
+				}
+			}
+		},
+		"resources": {
+			"css": [{
+				"uri": "css/style.css"
+			}]
+		},
+		"routing": {
+			"config": {
+				"viewPath": "SHOP_FLOOR_PORTAL_OF_MAHESHSHOP_FLOOR_PORTAL_OF_MAHESH.view",
+				"controlId": "App",
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"async": true,
+				"controlAggregation": "pages",
+				"clearControlAggregation": false
+			},
+			"targets": {
+				"View1": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearAggregation": true,
+					"viewName": "View1",
+					"viewLevel": 1
+				},
+				"View2": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearAggregation": true,
+					"viewName": "View2",
+					"viewLevel": 2
+				},
+				"View3": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearAggregation": true,
+					"viewName": "View3",
+					"viewLevel": 2
+				},
+				"View4": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearAggregation": true,
+					"viewName": "View4",
+					"viewLevel": 2
+				},
+				"View5": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearAggregation": true,
+					"viewName": "View5",
+					"viewLevel": 2
+				},
+				"View6": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearAggregation": true,
+					"viewName": "View6",
+					"viewLevel": 2
+				},
+				"View7": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearAggregation": true,
+					"viewName": "View7",
+					"viewLevel": 2
+				},
+				"View8": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearAggregation": true,
+					"viewLevel": 2,
+					"viewName": "View8"
+				}
+			},
+			"routes": [{
+				"name": "View1",
+				"pattern": "Login",
+				"titleTarget": "",
+				"greedy": false,
+				"target": ["View1"]
+			}, {
+				"name": "View2",
+				"pattern": "Planned-Orders-Dashboard",
+				"titleTarget": "",
+				"greedy": false,
+				"target": ["View2"]
+			}, {
+				"name": "View3",
+				"pattern": "Planned-Orders-Yearly",
+				"titleTarget": "",
+				"greedy": false,
+				"target": ["View3"]
+			}, {
+				"name": "View4",
+				"pattern": "Planned-Orders-Monthly",
+				"titleTarget": "",
+				"greedy": false,
+				"target": ["View4"]
+			}, {
+				"name": "View5",
+				"pattern": "Production-Orders-Yearly",
+				"titleTarget": "",
+				"greedy": false,
+				"target": ["View5"]
+			}, {
+				"name": "View6",
+				"pattern": "Production-Orders-Monthly",
+				"titleTarget": "",
+				"greedy": false,
+				"target": ["View6"]
+			}, {
+				"name": "View7",
+				"pattern": "Dashboard",
+				"titleTarget": "",
+				"greedy": false,
+				"target": ["View7"]
+			}, {
+				"name": "View8",
+				"pattern": "Production-Orders-Dashboard",
+				"titleTarget": "",
+				"greedy": false,
+				"target": ["View8"]
+			}]
+		}
+	}
+}

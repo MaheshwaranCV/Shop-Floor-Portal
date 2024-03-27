@@ -1,0 +1,37 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
+	<Dialog id="fragmentinfo24" title="Production Order List Year Wise">
+		<l:Grid width="auto" defaultSpan="L12 M7 S12" id="idGridOrder24">
+			<l:content>
+				<f:SimpleForm id="simpleform24" editable="true" maxContainerCols='2' layout="ResponsiveGridLayout">
+					<!--columnsM="6" columnsL="6" columnsXL="6"-->
+					<f:content>
+						<Label text="Prodution Plant"/>
+						<Text text="{/PlanPlant}"/>
+						<Label text="Mrp Controller"/>
+						<Text text="{/MrpController}"/>
+						<Label text="Production Order Number(PROD OD No)"/>
+						<Text text="{/OrderNumber}"/>
+						<Label text="Production Start Date"/>
+						<Text text="{/ProductionStartDate}"/>
+						<Label text="Production Finish Date"/>
+						<Text text="{/ProductionFinishDate}"/>
+						<Label text="Material Number"/>
+						<Text text="{/Material}"/>
+						<Label text="Order Start Date"/>
+						<Text text="{/EnterDate}"/>
+						<Label text="Order Finish Date"/>
+						<Text text="{/FinishDate}"/>
+						<Label text="Order Type"/>
+						<Text text="{/OrderType}"/>
+						<Label text="Time of Action"/>
+						<Text text="{/FinishTime}"/>
+					</f:content>
+				</f:SimpleForm>
+			</l:content>
+		</l:Grid>
+		<buttons>
+			<Button icon="sap-icon://decline" press="onClose4"></Button>
+			<!--<Button text="Close" press="onClose1"></Button>-->
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

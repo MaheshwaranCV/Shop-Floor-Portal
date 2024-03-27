@@ -1,0 +1,40 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
+	<Dialog id="fragmentinfo2" title="Plan Order List Month Wise">
+		<l:Grid width="auto" defaultSpan="L12 M7 S12" id="idGridOrder2">
+			<l:content>
+				<f:SimpleForm id="simpleform2" editable="true" maxContainerCols='2' layout="ResponsiveGridLayout">
+					<!--columnsM="6" columnsL="6" columnsXL="6"-->
+					<f:content>
+					 <Label text="Planned-Order No (PO No)"/>
+                        <Text text="{/PlannedorderNum}"/>
+                        <Label text="Material No"/>
+                        <Text text="{/Material}"/>
+                        <Label text="Order Type"/>
+                        <Text text="{/OrderType}"/>
+                        <Label text="Plan Open Date"/>
+                        <Text text="{/PlanOpenDate}"/>
+                        <Label text="Order Start Date"/>
+                        <Text text="{/OrderStartDate}"/>
+                        <Label text="Order End Date"/>
+                        <Text text="{/OrderFinDate}"/>
+                        <Label text="Order Start Time"/>
+                        <Text text="{/OrderStrTime}"/>
+                        <Label text="Order End Time"/>
+                        <Text text="{/OrderFinTime}"/>
+                        <Label text="Plan Plant"/>
+                        <Text text="{/PlanPlant}"/>
+                        <Label text="Production Plant"/>
+                        <Text text="{/ProdPlant}"/>
+                        <Label text="Time Of Action"/>
+                        <Text text="{/TimeOfAction}"/>
+						
+					</f:content>
+				</f:SimpleForm>
+			</l:content>
+		</l:Grid>
+		<buttons>
+			<Button icon="sap-icon://decline" press="onClose2"></Button>
+			<!--<Button text="Close" press="onClose1"></Button>-->
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

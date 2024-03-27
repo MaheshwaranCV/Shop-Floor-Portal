@@ -1,0 +1,20 @@
+<mvc:View controllerName="SHOP_FLOOR_PORTAL_OF_MAHESHSHOP_FLOOR_PORTAL_OF_MAHESH.controller.View7" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:layout="sap.ui.layout" height="100%">
+	<App>
+		<pages>
+			<Page id="page" title="DASHBOARD" class="bg2">
+				<VBox id="_IDGenVBox1" fitContainer="true" justifyContent="Center" alignItems="Center" alignContent="Center">
+					<layout:VerticalLayout class="sapUiResponsiveMargin">
+						<layout:HorizontalLayout allowWrapping="true">
+							<GenericTile id="_IDGenGenericTile1" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="PLANNED ORDERS"
+								subheader="Click here" press="onLogin17" frameType="OneByOne"></GenericTile>
+							<GenericTile id="_IDGenGenericTile2" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="PRODUCTION ORDERS"
+								subheader="Click here" press="onLogin22" frameType="OneByOne"></GenericTile>
+						</layout:HorizontalLayout>
+					</layout:VerticalLayout>
+					<Button id="_IDGenButton15" width="15rem" text="LOGOUT" press="logout"/>
+				</VBox>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

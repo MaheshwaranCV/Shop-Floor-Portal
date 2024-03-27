@@ -1,0 +1,86 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:tnt="sap.tnt"
+	xmlns:smartFilterBar="sap.ui.comp.smartfilterbar" height="100%" xmlns:l="sap.ui.layout"
+	controllerName="SHOP_FLOOR_PORTAL_OF_MAHESHSHOP_FLOOR_PORTAL_OF_MAHESH.controller.View6" xmlns:smartTable="sap.ui.comp.smarttable"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+	<App>
+		<pages>
+			<Page title="PRODUCTION ORDER [MONTH WISE]">
+				<content>
+					<l:HorizontalLayout class="sapUiMediumMarginEnd">
+						<FlexBox height="4rem" alignItems="Center" justifyContent="Start">
+							<FlexBox width="1rem" alignItems="Center" justifyContent="Center"/>
+							<Button id="_IDGenButton4" width="10rem" text="BACK" press="back"/>
+							<FlexBox width="57.5rem" alignItems="Center" justifyContent="Center"/>
+							<Button id="_IDGenButton5" width="10rem" text="LOGOUT" press="logout"/>
+							<FlexBox width="1.5rem" alignItems="Center" justifyContent="Center"/>
+						</FlexBox>
+					</l:HorizontalLayout>
+					<l:HorizontalLayout class="sapUiMediumMarginEnd">
+						<FlexBox height="4rem" alignItems="Center" justifyContent="Start">
+							<FlexBox width="1rem" alignItems="Center" justifyContent="Center"/>
+							<SearchField liveChange="onsearch" width="39.5rem" placeholder="PRODUCTION ORDER NUMBER"/>
+							<FlexBox width="28rem" alignItems="Center" justifyContent="Center"/>
+							<Select items="{path: '/Month'}" change="onChange" id="MonthDropdown" class="dropdown">
+								<core:ListItem id="plnmon" key="{MonthNo}" text="{MonthName}"/>
+							</Select>
+						</FlexBox>
+					</l:HorizontalLayout>
+					<l:HorizontalLayout class="sapUiMediumMarginEnd">
+						<FlexBox height="4rem" alignItems="Center" justifyContent="Start">
+							<FlexBox width="1rem" alignItems="Center" justifyContent="Center"/>
+							<Label id="totalCountLabel"/>
+						</FlexBox>
+					</l:HorizontalLayout>
+					<ScrollContainer height='30rem' vertical='true'>
+						<smartTable:SmartTable id="producttable" entitySet="LineItemsSet" smartFilterId="smartFilterBar" tableType="Table" useExportToExcel="false"
+							useVariantManagement="true" useTablePersonalisation="true" enableAutoBinding="true" class="me" app:useSmartToggle="true">
+							<Table id="productionordertable" items="{/productionorder}" select="onrow" mode="SingleSelectMaster" class="tablenoti"
+								selectionChange="displayProdOrder_Month">
+								<columns>
+									<Column>
+										<Text text="PRODUCTION PLANT"/>
+									</Column>
+									<Column>
+										<Text text="MRP CONTROLLER"/>
+									</Column>
+									<Column>
+										<Text text="PRODUCTION ORDER NUMBER"/>
+									</Column>
+									<Column>
+										<Text text="MATERIAL NUMBER"/>
+									</Column>
+									<Column>
+										<Text text="TARGET QUANTITY"/>
+									</Column>
+									<Column>
+										<Text text="UNIT"/>
+									</Column>
+									<Column>
+										<Text text="PRODUCTION START DATE"/>
+									</Column>
+									<Column>
+										<Text text="PRODUCTION FINISH DATE"/>
+									</Column>
+								</columns>
+								<items>
+									<ColumnListItem>
+										<cells>
+											<Text text="{PlanPlant}"/>
+											<Text text="{MrpController}"/>
+											<Text text="{OrderNumber}"/>
+											<Text text="{Material}"/>
+											<Text text="{TargetQuantity}"/>
+											<Text text="{Unit}"/>
+											<Text text="{ path: 'ProductionStartDate', formatter: '.formatDate' }"/>
+											<Text text="{ path: 'ProductionFinishDate', formatter: '.formatDate' }"/>
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
+						</smartTable:SmartTable>
+					</ScrollContainer>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

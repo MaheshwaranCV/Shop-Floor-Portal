@@ -1,0 +1,83 @@
+/* Styling the Page */
+
+.bg1 {
+    background-image: url("https://wallpapers.com/images/hd/engineer-background-q1ix3h10gp2ovdrj.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* Styling the VBox */
+
+.form {
+    margin: 0 auto;
+    width: 360px;
+    padding: 20px;
+    background-color: #CCF2FF;
+    margin-top: 15%;
+}
+
+
+/* Styling the Title */
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: Black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* Styling the Label */
+
+.label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #808080;
+}
+
+
+/* Styling the Input Field */
+
+.inputField {
+    margin-bottom: 10px;
+    width: 10px;
+}
+
+
+/* Styling the Login Button */
+
+.loginButton {
+    margin-top: 10px;
+    background-color: deeppink;
+    color: white;
+}
+
+.bg2 {
+    background-image: url("https://www.datarobot.com/wp-content/uploads/2022/05/Quality-Assurance-in-Manufacturing-background-image.png");
+    background-size: cover;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.bg3 {
+    background-image: url("https://www.mtractionenterprise.com/blog/wp-content/uploads/2019/05/11494.jpg");
+    background-size: cover;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.bg4 {
+    background-image: url("https://imechewebresources.blob.core.windows.net/imeche-web-content/images/default-source/pe-news/shutterstock_1505481926.png?sfvrsn=e9099712_0");
+    background-size: cover;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*.tileLayout{*/
+/*	background-color:rgb(100,149,237);*/
+/*	color:white;*/
+/*}*/
+
+/* In your CSS file or inline styles */
+/* In your CSS file or inline styles */
